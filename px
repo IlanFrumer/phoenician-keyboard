@@ -1,0 +1,63 @@
+default  partial alphanumeric_keys
+xkb_symbols "basic" {
+    name[Group1]= "Phoenician";
+    key.type[Group1] = "FOUR_LEVEL_SEMIALPHABETIC";
+
+    key <AB01> { [ U10906, hebrew_zain ]};
+    key <AB02> { [ U1090e, hebrew_samech ]};
+    key <AB03> { [ U10901, hebrew_bet ]};
+    key <AB04> { [ U10904, hebrew_he ]};
+    key <AB05> { [ U1090d, hebrew_nun ]}; 
+    key <AB06> { [ U1090c, hebrew_mem ]};
+    key <AB07> { [ U10911, hebrew_zade ]};  
+    key <AB08> { [ U10915, hebrew_taw ]}; 
+    key <AB09> { [ U10911, hebrew_finalzade ]}; 
+
+    key <AC01> { [ U10914, hebrew_shin ]};  
+    key <AC02> { [ U10903, hebrew_dalet ]};  
+    key <AC03> { [ U10902, hebrew_gimel ]};
+    key <AC04> { [ U1090a, hebrew_kaph ]};
+    key <AC05> { [ U1090f, hebrew_ayin ]};  
+    key <AC06> { [ U10909, hebrew_yod ]};  
+    key <AC07> { [ U10907, hebrew_chet ]};  
+    key <AC08> { [ U1090b, hebrew_lamed ]};
+    key <AC09> { [ U1090a, hebrew_finalkaph ]};
+    key <AC10> { [ U10910, hebrew_finalpe ]};
+
+    key <AD01> { [ slash, slash ]	};
+    key <AD02> { [ apostrophe, apostrophe ]	};
+    key <AD03> { [ U10912, hebrew_qoph ]};  
+    key <AD04> { [ U10913, hebrew_resh ]};  
+    key <AD05> { [ U10900, hebrew_aleph ]};
+    key <AD06> { [ U10908, hebrew_tet ]};  
+    key <AD07> { [ U10905, hebrew_waw ]};  
+    key <AD08> { [ U1090d, hebrew_finalnun ]};
+    key <AD09> { [ U1090c, hebrew_finalmem ]};
+    key <AD10> { [ U10910, hebrew_pe ] };  
+
+    key.type[Group1] = "FOUR_LEVEL";
+
+    // Non-alphanumeric keys
+    key <AB10> { [ period,	question,  division	]};
+    key <AC11> { [ comma,	quotedbl]	};
+    key <AD11> { [ bracketright, braceright	]};
+    key <AD12> { [ bracketleft,  braceleft	]};
+    key <BKSL> { [ backslash,    bar	]	};
+
+    // Top (digits) row
+    key <TLDE> { [ semicolon,	asciitilde	]};
+    key <AE01> { [     1,	exclam	]		};
+    key <AE02> { [     2,	at	]		};
+    key <AE03> { [     3, 	numbersign	]};
+    key <AE04> { [     4, 	dollar	]};
+    key <AE05> { [     5,	percent	]};
+    key <AE06> { [     6, 	asciicircum	]};
+    key <AE07> { [     7,	ampersand	]};
+    key <AE08> { [     8,	asterisk]};
+    key <AE09> { [     9,	parenright	]};
+    key <AE10> { [     0,	parenleft	]};
+    key <AE11> { [ minus,	underscore	]};
+    key <AE12> { [ equal, 	plus	]};
+
+    include "level3(ralt_switch)"
+};
